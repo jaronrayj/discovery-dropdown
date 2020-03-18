@@ -8,17 +8,14 @@ Also, you can set up your own logo by replacing "replaceMeWithUrl" with your log
 
 Within the Script tags near the top of the page - 
 
-`// Student / Teacher Url
-var studentTeacherUrl = "https://DOMAIN.instructure.com/login/saml"`
+`var studentTeacherUrl = "https://DOMAIN.instructure.com/login/saml"`
 * Replace DOMAIN with your Canvas url domain
 * Replace saml with whatever authentication you want to utilize. You can ask your Customer Success Manager if you are uncertain.
 
-`// Parent Url
-var parentUrl = "https://DOMAIN.instructure.com/login/canvas"`
+`var parentUrl = "https://DOMAIN.instructure.com/login/canvas"`
 * Replace DOMAIN with your Canvas url domain
 
-`// Change this to your icon if you want your logo on the discovery page
-var imgPlaceholder = "replaceMeWithUrl"`
+`var imgPlaceholder = "replaceMeWithUrl"`
 * Replace replaceMeWithUrl with your logo url
 
 For more information you can check these resources - 

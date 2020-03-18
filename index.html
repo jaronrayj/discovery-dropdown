@@ -21,6 +21,9 @@
 
     // Parent Url
     var parentUrl = "https://DOMAIN.instructure.com/login/canvas"
+
+    // Change this to your icon if you want your logo on the discovery page
+    var imgPlaceholder = "replaceMeWithUrl"
 </script>
 
 <!-- End changes area -->
@@ -67,6 +70,11 @@
         font-family: 'Lato', sans-serif;
     }
 
+    #imagePlaceholder {
+        text-align: center;
+        margin-top: 100px;
+    }
+
     #img {
         margin-bottom: 30px;
     }
@@ -88,6 +96,11 @@
                 <br>
                 <input type="button" value="Login" onclick="winOpen()" id="submit" />
             </form>
+
+            <div id="imagePlaceholder">
+
+            </div>
+
         </div>
     </div>
 </body>
@@ -106,6 +119,13 @@
             default:
                 break;
         }
+    }
+
+    if (imgPlaceholder !== "replaceMeWithUrl") {
+        var image = document.createElement("img");
+        image.src = imgPlaceholder
+        image.alt = "School Logo"
+        document.getElementById("imagePlaceholder").appendChild(image)
     }
 </script>
 

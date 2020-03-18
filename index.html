@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Only Make changes here unless you know better! -->
+<!-- 
+    Change URLs appropriately for your specific instance, i.e. 
+    https://DOMAIN.instructure.com/login/canvas
+    https://DOMAIN.instructure.com/login/saml
+    https://DOMAIN.instructure.com/login/ldap
+    https://DOMAIN.instructure.com/login/google
+    https://DOMAIN.instructure.com/login/microsoft
+
+    Change the "DOMAIN" below to your specific instance
+ -->
+
+<script>
+    var studentTeacherUrl = "https://DOMAIN.instructure.com/login/saml"
+    var parentUrl = "https://DOMAIN.instructure.com/login/canvas"
+</script>
+
+<!-- End changes area -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    .container {
+        margin: auto;
+        width: 25%;
+        margin-top: 60px;
+    }
+
+    #submit {
+        cursor: pointer;
+    }
+
+    #submit,
+    #auth-types,
+    #auth-label {
+        width: 100%;
+        height: 30px;
+        font-size: large;
+        margin-top: 15px;
+    }
+
+    body {
+        background-color: #394b58;
+        color: white;
+        font-family: 'Lato', sans-serif;
+    }
+
+    #img {
+        margin-bottom: 30px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <img id='img' alt="Canvas by Instructure"
+            src="https://du11hjcvx0uqb.cloudfront.net/br/dist/images/login/canvas-logo-5617606953.svg">
+        <div>
+            <form name="redirect">
+                <label id="auth-label" for="auth-types">Choose your role</label>
+                <br>
+                <select id="auth-types" name="selection">
+                    <option value="">Select...</option>
+                    <option value="studentTeacherUrl">Student or Teacher</option>
+                    <option value="parentUrl">Parent</option>
+                </select>
+                <br>
+                <input type="button" value="Login" onclick="winOpen()" id="submit" />
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+    function winOpen() {
+        var url = document.redirect.selection.value
+        console.log("winOpen -> url", url);
+        switch (url) {
+            case "studentTeacherUrl":
+                document.location.href = studentTeacherUrl;
+                break;
+            case "parentUrl":
+                document.location.href = parentUrl;
+                break;
+
+            default:
+                break;
+        }
+    }
+</script>
+
+</html>

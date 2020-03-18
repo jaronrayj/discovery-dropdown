@@ -41,6 +41,15 @@
 
     #submit {
         cursor: pointer;
+        background-color: #394b58;
+        border: 1px solid white;
+        color: white;
+        border-radius: 5px;
+    }
+
+    #submit:hover {
+        background: #394b58;
+        opacity: 0.6;
     }
 
     #submit,
@@ -86,7 +95,6 @@
 <script>
     function winOpen() {
         var url = document.redirect.selection.value
-        console.log("winOpen -> url", url);
         switch (url) {
             case "studentTeacherUrl":
                 document.location.href = studentTeacherUrl;

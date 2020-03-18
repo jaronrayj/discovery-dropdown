@@ -22,4 +22,4 @@ For more information you can check these resources -
 [Discovery Page Info](https://community.canvaslms.com/docs/DOC-14067-why-a-discovery-page-also-what-is-a-discovery-page)
 
 
-[More information](https://docs.google.com/document/d/1BYNVvp2HO4zGWMAHm5rKcCXzdcfAASQGmHGPUXOQxjQ/edit?ts=5e6f9b77)
+[And more discovery page information](https://docs.google.com/document/d/1BYNVvp2HO4zGWMAHm5rKcCXzdcfAASQGmHGPUXOQxjQ/edit?ts=5e6f9b77)

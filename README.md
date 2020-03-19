@@ -1,6 +1,7 @@
 # discovery-dropdown
 
 Simple discovery page setup!
+Link to view - https://jaronrayj.github.io/discovery-dropdown/ 
 
 There is a section in the [index.html](https://github.com/jaronrayj/discovery-dropdown/blob/master/index.html) that you will need to edit to your specific domain and authentication type.
 
